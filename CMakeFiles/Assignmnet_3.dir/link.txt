@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Assignmnet_3.dir/main.cpp.o CMakeFiles/Assignmnet_3.dir/dict.cpp.o -o Assignmnet_3 

@@ -1,0 +1,3 @@
+/mnt/c/Users/Mohamed Khalil/Desktop/Courses/applied/Assignmnet_3/CMakeFiles/Assignmnet_3.dir
+/mnt/c/Users/Mohamed Khalil/Desktop/Courses/applied/Assignmnet_3/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Mohamed Khalil/Desktop/Courses/applied/Assignmnet_3/CMakeFiles/rebuild_cache.dir
