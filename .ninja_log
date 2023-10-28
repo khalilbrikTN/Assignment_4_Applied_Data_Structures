@@ -1,0 +1,9 @@
+# ninja log v5
+276	310	1698516390531755776	Assignmnet_3	b679ccb1680b83eb
+0	419	7202225292061857	CMakeFiles/Assignmnet_3.dir/main.cpp.obj	6168d8aac057690e
+16	468	7202225292564299	CMakeFiles/Assignmnet_3.dir/dict.cpp.obj	dc035fe4dc4e3eb8
+468	641	7202225294294468	Assignmnet_3.exe	4cb57e4833b0cb35
+2	144	7202226413234762	Assignmnet_3.exe	4cb57e4833b0cb35
+2	385	7202229814368376	CMakeFiles/Assignmnet_3.dir/main.cpp.obj	6168d8aac057690e
+12	409	7202229814618343	CMakeFiles/Assignmnet_3.dir/dict.cpp.obj	dc035fe4dc4e3eb8
+409	542	7202229815952230	Assignmnet_3.exe	4cb57e4833b0cb35

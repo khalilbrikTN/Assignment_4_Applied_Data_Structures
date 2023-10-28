@@ -24,7 +24,7 @@ public:
     void fill_data(std::string file_name);
     void print_city_info(std::string city);
     double distance();
-    void add_city();
+    void add_city(const std::string& file_name);
     void printAllCities(Node<struct data, std::string>* root);
 
 private:

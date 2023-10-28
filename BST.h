@@ -172,6 +172,10 @@ public:
         }
     };
 
+    int compare(const key_type& key1, const key_type& key2) {
+        return key1.compare(key2);
+    };
+
 
 };
 

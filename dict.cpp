@@ -132,26 +132,51 @@ double dict::distance() {
     return distance;
 }
 
-void dict::add_city(){
+void dict::add_city(const std::string& file_name) {
     string city_name, country_name;
     double lon, lat;
 
-    cout<<"Enter the data of the city you want to add: ";
-    cout<<"City Name: ";
-    cin>>city_name;
-    cout<<"Country Name: ";
-    cin>>country_name;
-    cout<<"Longitude: ";
-    cin>>lon;
-    cout<<"Latitude: ";
-    cin>>lat;
+    cout << "Enter the data of the city you want to add: " << endl;
+    cout << "City Name: ";
+    cin >> city_name;
+    cout << "Country Name: ";
+    cin >> country_name;
+    cout << "Longitude: ";
+    cin >> lon;
+    cout << "Latitude: ";
+    cin >> lat;
 
-    struct data city_data = {lon, lat, country_name};
+    struct data city_data = { lon, lat, country_name };
     tree->Insert(city_name, city_data);
 
-    cout<<"City added!"<<endl;
+    cout << "City added!" << endl;
 
+    // Append the city data to the specified file
+    ofstream file(file_name, ios::app); // Open the file in append mode
+
+    if (file.is_open()) {
+        // Calculate the next available city number
+        int next_city_number = 1;
+        Node<struct data, string>* current = tree->get_root();
+        while (current != nullptr) {
+            if (tree->compare(city_name, current->key) < 0) {
+                current = current->left;
+            } else {
+                current = current->right;
+                next_city_number++;
+            }
+        }
+
+        // Append the new city data to the file
+        file << next_city_number << "," << city_name << ","
+             << lat << "," << lon << "," << country_name << endl;
+
+        file.close();
+    } else {
+        cout << "Unable to open the file for appending city data." << endl;
+    }
 }
+
 
 void dict::printAllCities(Node<struct data, string>* root) {
     if (root == nullptr) {

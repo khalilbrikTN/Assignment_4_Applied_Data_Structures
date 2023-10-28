@@ -36,7 +36,7 @@ int main() {
                 break;
             }
             case 3: {
-                myDict->add_city();
+                myDict->add_city("data.csv");
                 break;
             }
             case 4: {
